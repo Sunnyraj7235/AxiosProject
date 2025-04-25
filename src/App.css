@@ -1,0 +1,226 @@
+body {
+  background-color: #17202a;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: urbanist;
+}
+
+p,
+a,
+li,
+input {
+  font-size: 1.6rem;
+  letter-spacing: 0.12rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+button {
+  padding: 0.8rem 2.2rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  border: 0;
+  background-color: hsl(160, 80%, 48%);
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+  margin-left: 1.2 rem;
+}
+
+button:hover {
+  background-color: hsl(160, 80%, 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(9, 172, 115) 0px 7px 19px 0px;
+}
+.main-section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-form {
+  padding: 1.6rem;
+  background-color: #212f3d;
+  border-radius: 0.6rem;
+  margin: 3.2rem auto;
+
+  form {
+    display: flex;
+    gap: 1.2rem;
+  }
+
+  & input {
+    width: 24rem;
+    color: #212f3d;
+    border: 0.1rem solid grey;
+    border-radius: 0.3rem;
+    padding: 0.7rem 1rem 0.5rem;
+  }
+}
+.section-post {
+  width: 90%;
+
+  & ol {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.2rem;
+
+    & li {
+      background-color: #212f3c;
+      padding: 1.6rem;
+      border-radius: 0.3rem;
+      list-style-position: inside;
+      border-left: 0.2rem solid #fff;
+    }
+    & .btn-delete {
+      background-color: #e74c3c;
+      margin-left: 5px;
+      &:hover {
+        color: hsl(0, 0%, 100%);
+        box-sizing: rgb(167, 54, 13) 0px 7px 19px 0px;
+      }
+    }
+  }
+}
+/* Base styles */
+body {
+  background-color: #17202a;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: urbanist;
+}
+
+p,
+a,
+li,
+input {
+  font-size: 1.6rem;
+  letter-spacing: 0.12rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+button {
+  padding: 0.8rem 2.2rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  border: 0;
+  background-color: hsl(160, 80%, 48%);
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all 0.5s ease;
+  margin-left: 1.2rem;
+}
+
+button:hover {
+  background-color: hsl(160, 80%, 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(9, 172, 115) 0px 7px 19px 0px;
+}
+
+.main-section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-form {
+  padding: 1.6rem;
+  background-color: #212f3d;
+  border-radius: 0.6rem;
+  margin: 3.2rem auto;
+}
+
+.section-form form {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.section-form input {
+  width: 24rem;
+  color: #212f3d;
+  border: 0.1rem solid grey;
+  border-radius: 0.3rem;
+  padding: 0.7rem 1rem 0.5rem;
+}
+
+.section-post {
+  width: 90%;
+}
+
+.section-post ol {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.2rem;
+}
+
+.section-post li {
+  background-color: #212f3c;
+  padding: 1.6rem;
+  border-radius: 0.3rem;
+  list-style-position: inside;
+  border-left: 0.2rem solid #fff;
+}
+
+.btn-delete {
+  background-color: #e74c3c;
+  margin-left: 5px;
+}
+
+.btn-delete:hover {
+  color: hsl(0, 0%, 100%);
+  box-sizing: rgb(167, 54, 13) 0px 7px 19px 0px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+  .section-post ol {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .section-post ol {
+    grid-template-columns: 1fr;
+  }
+
+  .section-form input {
+    width: 100%;
+  }
+
+  button {
+    font-size: 1.4rem;
+    padding: 0.6rem 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+
+  p,
+  a,
+  li,
+  input {
+    font-size: 1.4rem;
+  }
+
+  button {
+    font-size: 1.2rem;
+    padding: 0.5rem 1.5rem;
+  }
+}
